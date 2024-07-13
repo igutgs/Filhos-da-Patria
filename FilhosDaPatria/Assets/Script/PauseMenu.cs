@@ -34,6 +34,11 @@ public class PauseMenu : MonoBehaviour
     {
         Tutorial.gameObject.SetActive(false);
         Time.timeScale = 1;
+        Health healthComponent = GetComponent<Health>();
+        if (healthComponent != null)
+        {
+            healthComponent.health += 5; // Adiciona 5 pontos de vida
+        }
     }
 
     public void Continuar()

@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ControladorSomPaUSE : MonoBehaviour
+public class ControladorSomPause : MonoBehaviour
 {
     [SerializeField] private AudioSource fundoMusical;
     public void VolumeMusical(float value)
